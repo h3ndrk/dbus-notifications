@@ -12,9 +12,11 @@ Example output on command line:
 
     {"app_name":"notify-send","body":"Example body","summary":"Some text...","expire_timeout":1000}
 
-The previous output can be reproduced via
+The previous output can be reproduced with the following command (dependency: **libnotify**):
 
     $ notify-send --expire-time=1000 "Example body" "Some text..."
+
+## Field description
 
 * `app_name`: The optional name of the application sending the notification. Can be blank.
 * `body`: The optional detailed body text. Can be empty.

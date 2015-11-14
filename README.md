@@ -6,6 +6,8 @@ Actions, [Hints](https://developer.gnome.org/notification-spec/#hints), [Markup]
 
 ## Output
 
+Example output on command line:
+
     {"app_name":"notify-send","body":"Example body","summary":"Some text...","expire_timeout":1000}
 
 * `app_name`: The optional name of the application sending the notification. Can be blank.

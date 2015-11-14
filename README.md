@@ -4,11 +4,17 @@ This program creates a server which listens on the [DBus](https://wiki.freedeskt
 
 Actions, [Hints](https://developer.gnome.org/notification-spec/#hints), [Markup](https://developer.gnome.org/notification-spec/#markup) and [Icons](https://developer.gnome.org/notification-spec/#icons-and-images) are not supported.
 
+This program uses the **libdbus** library. It is compatible to the **libnotify** library.
+
 ## Output
 
 Example output on command line:
 
     {"app_name":"notify-send","body":"Example body","summary":"Some text...","expire_timeout":1000}
+
+The previous output can be reproduced via
+
+    $ notify-send --expire-time=1000 "Example body" "Some text..."
 
 * `app_name`: The optional name of the application sending the notification. Can be blank.
 * `body`: The optional detailed body text. Can be empty.

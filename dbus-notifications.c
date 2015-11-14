@@ -248,7 +248,7 @@ static void cb_GetServerInformation(DBusConnection *connection, DBusMessage *mes
 {
 	DBusMessage *message_reply = NULL;
 	DBusMessageIter arguments;
-	const char *return_name = "dwm-status-notification-server";
+	const char *return_name = "dbus-notifications-server";
 	const char *return_vendor = "freedesktop.org";
 	const char *return_version = "1.0";
 	const char *return_spec_version = "1.2";
